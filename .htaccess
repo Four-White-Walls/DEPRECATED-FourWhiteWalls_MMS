@@ -1,0 +1,17 @@
+# Customized error messages.
+ErrorDocument 404 404.php
+ErrorDocument 403 404.php
+
+# Set the default handler.
+DirectoryIndex index.php
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+</IfModule>
+
+<Files ~ "\.db$">
+    Order allow,deny
+    Deny from all
+</Files>

@@ -1,0 +1,65 @@
+/*USER STYLES*/
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 3%;
+}
+
+li a {
+    color: black;
+}
+
+.header-logo {
+    width: 10%;
+    min-width: 200px;
+    padding-bottom: 25px;
+}
+
+p.adminBar {
+    margin-bottom: 0px;
+    
+}
+
+ul#menu {
+    padding-left: 0px;
+}
+
+.module {
+    background-color: gray;
+}
+
+
+.adminBar {
+    width: 100vw;
+}
+
+.row {
+    max-width: 100vw;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
+     
+}
+
+
+#hero-img{
+    width: 70%;
+    padding: 50px;
+
+}
+
+textarea {
+    resize: none;
+    height: auto;
+    width: 50%;
+}
+
+#editTextArea {
+    height: 500px !important;
+}
+
