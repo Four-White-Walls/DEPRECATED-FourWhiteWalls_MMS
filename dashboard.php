@@ -35,7 +35,9 @@
             
             //OPEN BODY SECTION
             sectionOpen( "py-3", "header" );
-            h1("Dashboard");
+            
+                    h1("Dashboard");
+
             
                     //IF ACCESS PERMISSIONS ARE GLOBAL RENDER DASHBOARD
                     if ($_SESSION['access'] == 'global') {

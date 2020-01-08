@@ -6,7 +6,10 @@
             session_start(); 
         } 
 
+        //INCLUDE DEPENDENCIES
         include '../functions.php';
+
+        //OPEN HTML
         htmlOpen();
 
         divOpen("container flex-column text-center bg-light pt-5 mt-5 w-50 border border-dark rounded");

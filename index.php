@@ -5,6 +5,7 @@
                 session_start(); 
             } 
 
+            //IF USER NOT LOGGED IN, REDIRECT TO LOGIN PAGE
             if ($_SESSION['userLoggedIn'] == "") {
                 header("Location: /user_functions/user-login.php");
             } else {

@@ -28,6 +28,7 @@
     //OPEN DIV
     divOpen("row w-50");
     h1('Posts');
+    echo "<a class='btn my-auto h-20 ml-auto btn-primary' href='/user_functions/page-edit.php'>New Post</a>";
 
     //OPEN DIV
     divOpen("bg-light text-dark border rounded col-md-12 py-1 d-flex justify-content-between");
