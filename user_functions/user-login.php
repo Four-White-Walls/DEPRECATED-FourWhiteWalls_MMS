@@ -5,8 +5,12 @@
         { 
             session_start(); 
         } 
+        //PAGE INCLUDES
         include '../functions.php';
+
+        //OPEN HTML
         htmlOpen();
+        
         divOpen("container flex-column text-center bg-light pt-5 mt-5 w-50 border border-dark rounded");
         h1("Login", "py-3");
 
@@ -22,9 +26,7 @@
         
         if(isset($_SESSION)) 
         { 
-
-        
-
+            
         
             //GENERATE LOGIN FORM
         if ($_SESSION['userLoggedIn'] == "") {
@@ -64,7 +66,10 @@
 
         htmlClose();
 
-        } else {
+        } 
+        
+        //IF LOGGED IN, WOULD YOU LIKE TO SIGN IN TO DIFFERENT ACCOUNT
+        else {
 
             divOpen("py-4");
                     p("You are already logged in. Would you like to ", "text-danger d-inline");

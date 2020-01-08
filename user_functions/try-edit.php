@@ -7,6 +7,7 @@
     
     include __DIR__ . '/../data/database_handler.php';
 
+    //GET POST VARIABLES
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $companyName = $_POST['companyName'];

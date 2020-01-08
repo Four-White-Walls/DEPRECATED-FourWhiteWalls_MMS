@@ -28,7 +28,7 @@
             //OPEN USER BAR DIV
             adminBar();
 
-
+        //RENDER CREATE MEMBER FORM
         sectionOpen("text-center");
         divOpen("pt-2");
         h1("Edit", "py-3" );

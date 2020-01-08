@@ -6,8 +6,10 @@
         session_start(); 
     } 
 
+    //PAGE INCLUDES
     include $_SERVER['DOCUMENT_ROOT'].'/data/database_handler.php';
 
+    //GET POST VARIABLES
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $companyName = $_POST['companyName'];
@@ -22,13 +24,19 @@
     $email = $_POST['email'];
 
     try {
-
-    $sql = "INSERT INTO members (first_name, last_name, company_name, address, city, county, state, zip, phone1, phone2, email, website ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+    
+    //SQL STATEMENT
+    $sql = "INSERT INTO members (first_name, last_name, company_name, address, city, county, state, zip, phone1, phone2, email, website) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
     $stmt= $conn->prepare($sql);
     $stmt->execute([$firstName, $lastName, $companyName, $address, $city, $county, $state, $zip, $phone1, $phone2, $website, $email]);
+    
+    //REDIRECT PAGE AFTER SQL EXECUTED
     header("Location: ../members.php");
-
-} catch(PDOException $e){ 
+    
+    } 
+    
+    //CATCH SQL ERRORS
+    catch(PDOException $e){ 
     echo $e->getMessage();
 }
 

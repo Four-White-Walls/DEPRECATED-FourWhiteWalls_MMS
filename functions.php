@@ -109,7 +109,6 @@
             //RENDER MENU
             function menu ( $menuItems ) {
             
-            //$MenuItems should be a PDO query to menu table in database. 
 
             if ($menuItems !== false) {
                 $menu = "<ul id='menu'>";
@@ -160,10 +159,13 @@
                 sectionClose();
             }
 
+
+
             //RENDER DATA ENTRY MODULE
             function dataEntry( ){
+            
                 divOpen("module col-lg-5 mw-50 text-light m-1 px-3 pt-3 rounded");
-                echo '<a href="visitor-survey.php" class="text-light">';
+                echo '<a href="survey.php?id=surveyspring2020" class="text-light">';
                 h1("Data Entry", "text-center");
                 echo '</a>';
             divClose();

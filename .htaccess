@@ -1,6 +1,6 @@
 # Customized error messages.
-ErrorDocument 404 404.php
-ErrorDocument 403 404.php
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
 
 # Set the default handler.
 DirectoryIndex index.php

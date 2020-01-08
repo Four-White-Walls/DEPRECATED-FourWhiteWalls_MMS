@@ -51,6 +51,7 @@
       divClose();
       sectionClose();
 
+      //INCLUDE SUMMERNOTE SCRIPT
       echo "<script>
       $('#summernote').summernote({
         tabsize: 2

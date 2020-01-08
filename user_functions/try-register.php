@@ -12,7 +12,6 @@
     $email = $_POST['email'];
 
     //UPDATE SQL STATEMENT TO CHECK IF USE EXISTS, TRY/CATCH
-    //$sql = $conn->query("SELECT * from userpeople limit 10")->fetchall(PDO::FETCH_ASSOC);
     
     //TRY TO CONNECT TO DATABASE AND INSERT NEW USERNAME/PASSWORD/EMAIL COMBINATION
     try {

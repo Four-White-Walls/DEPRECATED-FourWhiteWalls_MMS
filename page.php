@@ -6,19 +6,22 @@
         session_start(); 
     } 
     
+    //PAGE INCLUDES
     include 'functions.php';
     include $_SERVER['DOCUMENT_ROOT'].'/data/database_handler.php';
 
+    //OPEN HTML
     htmlOpen();
 
+    //RENDER ADMIN BAR IF USER LOGGED IN    
     if ($_SESSION['userLoggedIn'] == "true") {
         adminBar();
     }
 
-    //Parse URL to request page w/ 
+    //Parse URL for SQL request
     $url = substr($_SERVER['REQUEST_URI'], strpos($_SERVER['REQUEST_URI'], "=") + 1);
 
-    //Requsest 
+    //Request 
     $stmt = $conn->query("SELECT * FROM posts WHERE pagetitle='{$url}' LIMIT 1");
     $post = $stmt->fetch();
 
@@ -39,7 +42,7 @@
     }
 
     
-
+    //CLOSE HTML
     htmlClose();
 
 
