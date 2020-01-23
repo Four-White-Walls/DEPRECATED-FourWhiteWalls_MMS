@@ -39,7 +39,7 @@
          sectionOpen("row d-flex justify-content-center p-5");
          divOpen("col-md-4 bg-light rounded p-5 border border-dark");
          h2("{$post['title']}", "py-3");
-         echo "<form action='/user_functions/form-write.php?id={$url}' method='POST'>";
+         echo "<form action='/user_functions/form-write.php?={$url}' method='POST'>";
          echo $post['body'];
          echo "<button type='submit' class='btn btn-primary my-2'>Submit</button>";
          echo "</form>";
